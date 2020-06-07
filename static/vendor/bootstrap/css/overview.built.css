@@ -1,0 +1,219 @@
+.more::after, #ac-globalfooter .ac-gf-more::after {
+    top: -.08em;
+}
+
+.kr-comingsoon {
+    opacity: 0.7;
+    line-height: 2;
+}
+
+.quicklook-component .quicklook-cta:after {
+    top: 0;
+}
+
+/* KR fix headline on medium */
+
+.section-hero .headline, .section-sticky-hero .sticky-container .text-container .pro-name .quote-text, .section-sticky-hero .sticky-container .text-container .pro-quote .quote-text {
+    line-height: 1.1;
+}
+
+.typography-section-intro, .typography-features-label, .typography-headline {
+    line-height: 1.3;
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .headline {
+        line-height: 1.0;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-hero .headline {
+        line-height: 1.1;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .device-container {
+        top: 80px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-hero .device-container {
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .hero-video-container {
+        margin-bottom: 140px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-hero .hero-video-container {
+        margin-bottom: 0px
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .headline-xsmall-hide {
+        display: none;
+    }
+
+    .headline-xsmall-show {
+        display: block;
+    }
+}
+
+/* IE fix */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    html.fallback .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.static-fallback .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.no-js .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.fallback .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.static-fallback .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.no-js .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.fallback .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.static-fallback .section-sticky-hero .sticky-container .component-container .hardware-blend, 
+    html.no-js .section-sticky-hero .sticky-container .component-container .hardware-blend {
+        opacity: 0;
+    }
+
+    .subsection-thermals .image-thermal {
+        opacity: 0;
+    }
+
+    .subsection-thermals .image-thermal-fallback {
+        opacity: 1;
+    }
+
+    .subsection-thermals .replay-container {
+        display: none;
+    }
+
+    html.fallback .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.static-fallback .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.no-js .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.fallback .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.static-fallback .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.no-js .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.fallback .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.static-fallback .section-sticky-hero .sticky-container .text-container .pro-name, 
+    html.no-js .section-sticky-hero .sticky-container .text-container .pro-name {
+        left: 0px;
+        top: 30px;
+    }
+
+    html.fallback .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.static-fallback .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.no-js .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.fallback .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.static-fallback .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.no-js .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.fallback .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.static-fallback .section-sticky-hero .sticky-container.not-zoomed .text-container, 
+    html.no-js .section-sticky-hero .sticky-container.not-zoomed .text-container {
+        left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 1068px) and (-ms-high-contrast: active), (max-width: 1068px) and (-ms-high-contrast: none) {
+    .subsection-colors.subsection-tiled-top {
+        margin-top: 80px;
+    }
+
+    .section-hero .device-container {
+        top: 0;
+    }
+
+    .section-hero .hero-video-container {
+        margin-bottom: 60px;
+    }
+}
+
+/* image localize */
+
+@media only screen and (min-width: 734px) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image: url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_large.jpg")
+    }
+}
+
+@media only screen and (min-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 734px) and (min-resolution: 1.5dppx), only screen and (min-width: 734px) and (min-resolution: 144dpi) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image:url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_large_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 734px) and (max-width: 1068px) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image: url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_medium.jpg")
+    }
+}
+
+@media only screen and (min-width: 734px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 734px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (min-width: 734px) and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image:url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_medium_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 734px) and (max-width: 734px) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image: url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_small.jpg")
+    }
+}
+
+@media only screen and (min-width: 734px) and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 734px) and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (min-width: 734px) and (max-width: 734px) and (min-resolution: 144dpi) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image:url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_small_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image: url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_small.jpg");
+    }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .subsection-touch-bar-gallery .touchbar-gallery .item-container .image-keyboard-2 {
+        background-image:url("/kr/macbook-pro-16/a/images/overview/keyboard_gallery_2__e75kxte8wsmm_small_2x.jpg")
+    }
+}
+
+.section-promos .image-promo-continuity {
+    background-image: url("/kr/macbook-pro-16/a/images/overview/routers_continuity__eu9v82fh006e_large.jpg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-promos .image-promo-continuity {
+        background-image:url("/kr/macbook-pro-16/a/images/overview/routers_continuity__eu9v82fh006e_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-promos .image-promo-continuity {
+        background-image: url("/kr/macbook-pro-16/a/images/overview/routers_continuity__eu9v82fh006e_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-promos .image-promo-continuity {
+        background-image:url("/kr/macbook-pro-16/a/images/overview/routers_continuity__eu9v82fh006e_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-promos .image-promo-continuity {
+        background-image: url("/kr/macbook-pro-16/a/images/overview/routers_continuity__eu9v82fh006e_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .section-promos .image-promo-continuity {
+        background-image:url("/kr/macbook-pro-16/a/images/overview/routers_continuity__eu9v82fh006e_small_2x.jpg")
+    }
+}

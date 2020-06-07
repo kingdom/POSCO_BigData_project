@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>B반 3조 빅데이터 프로젝트 - 제조</title>
+
+  <!-- Bootstrap core CSS -->
+  
+  <link href="{{url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{{url_for('static', filename = 'vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'https://fonts.googleapis.com/css?family=Varela+Round')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename = 'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i')}}" rel="stylesheet">
+	
+  	
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/ac-globalfooter.built.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/ac-globalnav.built.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/ac-localnav.built.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/main.built.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/modal.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/overview.built.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/overview.built copy.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/overview.built(1).css')}}" rel="stylesheet">
+
+ <link href="{{url_for('static', filename = 'vendor/bootstrap/css/mai.buil5.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/overview.built5.css')}}" rel="stylesheet">
+<link href="{{url_for('static', filename = 'vendor/bootstrap/css/overview.built6.css')}}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{{url_for('static', filename = 'css/grayscale.min.css')}}" rel="stylesheet">
+  <script>
+    function check(){
+        form1.submit()
+    }
+
+</script>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">B반 3조 빅데이터 프로젝트 - 제조</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">prediction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#process">process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#Insight">Insight</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger bold" href="/admin">관리자 페이지 바로가기</a>
+          </li>       
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">반도체 수율 향상
+          </h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Innovation is not just about technology <br> It's about how it improves everyday life</h2>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-14 mx-auto">
+          <h2 class="text-white mb-4">모델을 이용하여 최적의 Temp_Etching 찾기</h2>
+          
+          <p class="text-white-50"> 중요변수들의 값을 입력하여 Thin F1에서 최적의 Temp_Etching 찾습니다</p>     
+    <form action="/predict01" method="POST" name='form1'>
+      <table border='0' align ='center'>
+      <tr>
+          <th class="text-white mb-4">Wafer_Num</th>
+          <td><input type="text" value='1' name="Wafer_Num"></td>
+      </tr>
+  
+      <tr>
+          <th class="text-white mb-4">type_</th>
+          <td><input type="text" value='dry' name="type_"></td>
+      </tr>
+      
+      <tr>
+          <th class="text-white mb-4">Temp_OXid</th>
+          <td><input type="number" value='870.143080' name="Temp_OXid"></td>
+      </tr>
+      
+      <tr>
+          <th class="text-white mb-4">ppm</th>
+          <td><input type="number" value='22.15' name="ppm"></td>
+      </tr>
+      
+      <tr>
+          <th class="text-white mb-4">Pressure</th>
+          <td><input type="number" value='0.188' name="Pressure"></td>
+      </tr>
+      
+      <tr>
+          <th class="text-white mb-4">Oxid_time</th>
+          <td><input type="number" value='195.0' name="Oxid_time"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">thickness</th>
+          <td><input type="number" value='688.458' name="thickness"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">resist_target</th>
+          <td><input type="number" value='0.96985' name="resist_target"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">N2_HMDS</th>
+          <td><input type="number" value='16.960' name="N2_HMDS"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">pressure_HMDS</th>
+          <td><input type="number" value='14.940' name="pressure_HMDS"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">temp_HMDS</th>
+          <td><input type="number" value='20.002' name="temp_HMDS"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">temp_HMDS_bake</th>
+          <td><input type="number" value='205.266' name="temp_HMDS_bake"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">time_HMDS_bake</th>
+          <td><input type="number" value='90.001' name="time_HMDS_bake"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">spin1</th>
+          <td><input type="number" value='505.266' name="spin1"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">spin2</th>
+          <td><input type="number" value='4105.328' name="spin2"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">spin3</th>
+          <td><input type="number" value='5131.660' name="spin3"></td>
+      </tr>
+      
+      <tr>
+          <th class="text-white mb-4">photoresist_bake</th>
+          <td><input type="number" value='5.119' name="photoresist_bake"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">temp_softbake</th>
+          <td><input type="number" value='93.795' name="temp_softbake"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">time_softbake</th>
+          <td><input type="number" value='29.990' name="time_softbake"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">Line_CD</th>
+          <td><input type="number" value='25.657' name="Line_CD"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">Wavelength</th>
+          <td><input type="number" value='436' name="Wavelength"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">Resolution</th>
+          <td><input type="number" value='542.767' name="Resolution"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">Energy_Exposure</th>
+          <td><input type="number" value='106.535' name="Energy_Exposure"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">Source_Power</th>
+          <td><input type="number" value='49.990' name="Source_Power"></td>
+      </tr>
+      <tr>
+          <th class="text-white mb-4">Selectivity</th>
+          <td><input type="number" value='1.000' name="Selectivity"></td>
+      </tr>
+  
+  
+    </table>
+    <br>
+    <br>
+      <tr>
+          <td colspan="2">
+    
+          <input id="submit_btn" class="btn btn-primary js-scroll-trigger" type="button" value="결과 예측" onclick="check()">                    
+          <input type="reset" class="btn btn-primary js-scroll-trigger" value="취소">
+      </tr>
+      </form>
+          <br><br><br><br><br>
+          </div>
+          
+      </div>
+
+    </div>
+    
+  </section>
+
+
+  <!-- process Section -->
+  <!-- oxid Section -->
+
+<section id="process" class="section section-storage" data-anim-scroll-group="Section - Storage" data-analytics-section-engagement="name:storage">
+	
+      <div class="section-content">
+				<h2 class="typography-section-headline section-eyebrow">산화 공정</h2>
+				<h3 class="typography-section-headline section-headline">산화막을 생성하여 웨이퍼 보호.</h3>
+				<p class="typography-section-intro section-intro">산화공정을 거치는 이유는 웨이퍼에 <span class="bold">절연막 역할</span>을 하는 산화막(SiO₂)을 형성해 회로와 회로사이에 누설전류가 흐르는 것을 차단하기 위해서 입니다. 산화막은 또한 이온주입공정에서 확산 방지막 역할을 하고, 
+식각공정에서는 필요한 부분이 잘못 식각되는 것을 막는 <span class="bold">식각 방지막 역할</span>도 합니다</p>
+				
+        <div class="subsection no-pad-bottom">
+           
+				</div>
+        <center>   <video class="img-fluid" autoplay width="900" height="500" muted loop> 
+            <source src="{{url_for('static', filename = 'img/all.mp4')}}" type="video/mp4"> 
+          </video></center>
+				<div class="subsection subsection-badges row no-pad-bottom">
+					<div class="column large-5 small-12 ">
+						<div class="badge-animated engaged" data-component-list="BadgeComponent">
+							<div class="badge-line small-5"></div>
+							<figure class="badge badge-super" aria-labelledby="badge-macbook-pro-16.overview.storage.badges.badge-storage">
+								<div class="badge-content" id="badge-macbook-pro-16.overview.storage.badges.badge-storage"><span class="badge-caption">적정 산화막 두께</span><span class="badge-value">700<span class="badge-unit">nm</span></span><span class="badge-caption">이상</span></div>
+							</figure>
+						</div>
+					</div>
+					<div class="column large-5 small-12 large-offset-1 small-offset-0">
+						<div class="badge-animated engaged" data-component-list="BadgeComponent">
+							<div class="badge-line small-5"></div>
+							<figure class="badge badge-super" aria-labelledby="badge-macbook-pro-16.overview.storage.badges.badge-speed">
+								<div class="badge-content" id="badge-macbook-pro-16.overview.storage.badges.badge-speed"><span class="badge-caption">적정 산화 온도</span><span class="badge-value">750~1200<span class="badge-unit">℃</span></span><span class="badge-caption"><sup><a href="#footnote-21" class="footnote"></a></sup></span></div>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+   <!-- photo Section -->
+ <p>
+
+</p>
+<section class="section section-storage" data-anim-scroll-group="Section - Storage" data-analytics-section-engagement="name:storage">
+			<div class="section-content">
+				<h2 class="typography-section-headline section-eyebrow">포토 공정</h2>
+				<h3 class="typography-section-headline section-headline">웨이퍼에 회로를 그려 넣는 포토공정</h3>
+				<p class="typography-section-intro section-intro">흔히 <span class="bold">포토 리소그래피(Photo Lithography)</span>를 줄여서 포토공정(Photo)이라고 하는데요. 
+        이 공정은 웨이퍼 위에 회로 패턴이 담긴 마스크 상을 빛을 이용해 비춰 회로를 그리기 때문에 붙여진 이름입니다. 여기서 패턴을 형성하는 방법은 흑백 사진을 만들 때 필름에 형성된 상을 인화지에 인화하는 것과 유사합니다</p>
+				
+        <div class="subsection no-pad-bottom">
+           
+				</div>
+        <center>   <video class="img-fluid" autoplay width="900" height="500" muted loop> 
+            <source src="{{url_for('static', filename = 'img/2.mp4')}}" type="video/mp4"> 
+          </video></center>
+				<div class="subsection subsection-badges row no-pad-bottom">
+					<div class="column large-5 small-12 ">
+						<div class="badge-animated engaged" data-component-list="BadgeComponent">
+							<div class="badge-line small-5"></div>
+							<figure class="badge badge-super" aria-labelledby="badge-macbook-pro-16.overview.storage.badges.badge-storage">
+								<div class="badge-content" id="badge-macbook-pro-16.overview.storage.badges.badge-storage"><span class="badge-caption">적정 Line_cd</span><span class="badge-value">25<span class="badge-unit">nm</span></span><span class="badge-caption">이상</span></div>
+							</figure>
+						</div>
+					</div>
+					<div class="column large-5 small-12 large-offset-1 small-offset-0">
+						<div class="badge-animated engaged" data-component-list="BadgeComponent">
+							<div class="badge-line small-5"></div>
+							<figure class="badge badge-super" aria-labelledby="badge-macbook-pro-16.overview.storage.badges.badge-speed">
+								<div class="badge-content" id="badge-macbook-pro-16.overview.storage.badges.badge-speed"><span class="badge-caption"> </span><span class="badge-value">55<span class="badge-unit">nm</span></span><span class="badge-caption">이하<sup><a href="#footnote-21" class="footnote"></a></sup></span></div>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>     
+
+   <!-- Etching Section -->
+
+      
+<section class="section section-storage " data-anim-scroll-group="Section - Storage" data-analytics-section-engagement="name:storage">
+			<div class="section-content">
+				<h2 class="typography-section-headline section-eyebrow">식각 공정</h2>
+				<h3 class="typography-section-headline section-headline">동판화 에칭(Etching) 기법과 비슷한 식각공정.</h3>
+				<p class="typography-section-intro section-intro">식각공정은 식각 반응을 일으키는 물질의 상태에 따라 습식(wet)과 건식(dry)으로 나뉩니다.  <span class="bold">건식 식각(Dry Etching)</span>은 반응성 기체, 이온 등을 이용해 특정 부위를 제거하는 방법이며, 
+        <span class="bold">습식 식각(Wet Etching)</span>은 용액을 이용 화학적인 반응을 통해 식각하는 방법입니다.</p>
+				 
+        <div class="subsection no-pad-bottom">
+           
+				</div>
+        <center>   <video class="img-fluid" autoplay width="900" height="500" muted loop> 
+            <source src="{{url_for('static', filename = 'img/3.mp4')}}" type="video/mp4"> 
+          </video></center>
+
+		</section>
+
+
+   <!--Ion_Implantation Section -->
+
+<section class="section section-storage" data-anim-scroll-group="Section - Storage" data-analytics-section-engagement="name:storage">
+			<div class="section-content">
+				<h2 class="typography-section-headline section-eyebrow">증착 공정</h2>
+				<h3 class="typography-section-headline section-headline">웨이퍼에 얇은 옷을 입히는 증착공정,<br>웨이퍼를 반도체로 만드는 이온주입공정</h3>
+				<p class="typography-section-intro section-intro">현재 반도체 공정에서는 화학적 기상증착방법(CVD)를 주로 사용하고 있습니다. 화학적 기상증착방법(CVD)은 사용하는 <span class="bold">외부 에너지</span>에 따라 열 CVD, 플라즈마 CVD, 광 CVD로 세분화되는데요. 
+        특히 플라즈마 CVD는 저온에서 형성이 가능하고 두께 균일도를 조절할 수 있으며 대량 처리가 가능하다는 장점 때문에 가장 많이 이용되고 있습니다.</p>
+				 
+        <div class="subsection no-pad-bottom">
+           
+				</div>
+        <center>   <video class="img-fluid" autoplay width="900" height="500" muted loop> 
+            <source src="{{url_for('static', filename = 'img/4.mp4')}}" type="video/mp4"> 
+          </video></center>
+	
+		</section>
+
+
+   <!--Quality_Inspection Section -->
+
+<section class="section section-storage" data-anim-scroll-group="Section - Storage" data-analytics-section-engagement="name:storage">
+			<div class="section-content">
+				<h2 class="typography-section-headline section-eyebrow">품질 검사</h2>
+				<h3 class="typography-section-headline section-headline">수율 확인, 불량원인 확인 <br>최종 개선</h3>
+				<p class="typography-section-intro section-intro">EDS공정(Electrical Die Sorting)은 웨이퍼 위에 전자회로를 그리는 FAB 공정과 최종적인 제품의 형태를 갖추는 패키지 공정 사이에 진행됩니다. 
+          즉 <span class="bold">전기적 특성검사</span>를 통해 개별 칩들이 원하는 품질 수준에 도달했는지를 확인하는 공정입니다.</p>
+        <center>   <video class="img-fluid" autoplay width="900" height="500" muted loop> 
+            <source src="{{url_for('static', filename = 'img/5.mp4')}}" type="video/mp4"> 
+          </video></center>
+
+		</section>
+
+   <!--process point Section -->
+
+
+  <!--Insight Section -->
+
+<section id="Insight" class="section section-storage"  data-anim-scroll-group="Section - Storage" data-analytics-section-engagement="name:storage">
+			<div class="section-content">
+				<h2 class="typography-section-headline section-eyebrow">Insight</h2>
+				<h3 class="typography-section-headline section-headline">Lot_num 변수와  <br>다른 변수들간 관계</h3>
+				<p class="typography-section-intro section-intro">3D 시각화로 <span class="bold">Lot_num, Temp_oxid, oxid_time</span> 세 변수의 관계를 확인합니다.
+        Lot_num 18이상의 데이터의 <span class="bold">군집화</span>를 확인할 수 있습니다.</p>
+				
+        <div class="subsection no-pad-bottom">
+           
+				</div>
+        <center>   <video class="img-fluid" autoplay width="900" height="500" muted loop> 
+            <source src="{{url_for('static', filename = 'img/6.mp4')}}" type="video/mp4"> 
+          </video></center>
+				<div class="subsection subsection-badges row no-pad-bottom">
+					<div class="column large-5 small-12 ">
+						<div class="badge-animated engaged" data-component-list="BadgeComponent">
+						
+	
+						</div>
+					</div>
+				</div>
+			</div>
+                <center><a class="typography-section-headline section-headline" href="/admin">공정 관리자 페이지 바로가기</a></center>
+		</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">process</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">POSCO AI.BigData</div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">512bit@naver.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">010-9671-0200</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      B반 3조 &copy; POSCO AI.BigData
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  
+  <script src="{{url_for('static', filename = 'vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename = 'vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{{url_for('static', filename = 'vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{url_for('static', filename = 'js/grayscale.min.js')}}"></script>
+
+
+
+
+</body>
+</html>
